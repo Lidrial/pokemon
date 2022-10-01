@@ -1,0 +1,175 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+
+}
+
+.head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color:rgb(255, 64, 64);
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+head div{
+    display: flex;
+}
+
+.game_name p, .player_name p {
+    align-items: center;
+    padding: 15px;
+    font-weight: 700;
+    color: white;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    color:azure;
+    font-weight: 700;
+}
+
+.buttons button:hover {
+    filter: sepia(40%);
+}
+
+#btn_game {
+    background-color: cornflowerblue;
+}
+
+#btn_pokedex {
+    background-color:forestgreen;
+}
+
+#reset {
+    background-color:slategray;
+}
+ 
+#pkmn_name{
+    text-transform: capitalize;
+}
+
+#pkmn_type{
+    text-transform: uppercase;
+}
+
+#pokedex {
+    margin-top: 25px;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-grow: 1;
+}
+
+#pokedex div {
+    width: 13%;
+}
+
+#fiche_pokemon {
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 5px gray;
+}
+
+.is-hidden {
+    display: none !important;
+}
+
+#map {
+    display: flex;
+    height: 87vh;
+    justify-content: center;
+    align-items: center;
+}
+
+tbody{
+    display: flex;
+}
+
+td {
+    background-image: url(../assets/hautes_herbes.png);
+    background-size: 100%;
+    max-height: 26px;
+    height: 26px;
+    max-width: 32px;
+    width: 32px;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: flex-end;
+}
+
+td img {
+    max-height: 52px;
+    height: 52px;
+    max-width: 32px;
+    transform: translate(0%, -60%);
+
+    
+
+}
+
+#fight {
+    position: absolute;
+    z-index: 50;
+    height: 330px;
+    width: 720px;
+    background-image: url(../assets/grass_battlground.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: solid 5px gray;
+    box-shadow: 0px 0px 15px gray;
+    display: flex;
+    flex-direction: column;
+}
+
+#enemy {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+#you {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+
+}
+
+#sauvage_img {
+    width: 165px;
+    transform: translate(-65%, 30%);
+
+}
+
+#player_img{
+    width: 165px;
+    transform: translate(65%, 30%);
+    overflow: hidden;
+
+}
+
+.grayscale {
+    filter: brightness(25%);
+}
+
+.page{
+    background-color: white;
+}
+

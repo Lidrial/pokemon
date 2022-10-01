@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <div id="page">
+        <div class="head">
+            <div class="game_name">
+               <p>JEU POKEMON</p>
+            </div>
+            <div class="buttons">
+                <button id="btn_game">JEU</button>
+                <button id="btn_pokedex">POKEDEX</button>
+            </div>
+            <div class="buttons">
+                <button id="reset">Reset</button>
+            </div>
+            <div class="player_name">
+                <p>LIDRIAL</p>
+            </div>
+        </div>
+        <div id="game">
+            <div id="map">
+    
+            </div>
+        </div>
+        <div id="pokedex" class="is-hidden">
+            <template id="fiche_pokemon_template">
+                <div id="fiche_pokemon">
+                    <p id="pkmn_id">N° </p>
+                    <p id="pkmn_name"></p>
+                    <img id="pkmn_sprite" scr="">
+                    <p id="pkmn_type"></p>
+                    <p id="pkmn_stats"></p>
+                </div>
+            </template>
+        </div>
+    </div>
+    <div id="fight" class="is-hidden">
+        <div id="enemy"></div>
+        <div id="you"></div>
+
+    </div>
+
+<script type="module" src="js/app.js"></script>
+
+    
+</body>
+</html>
